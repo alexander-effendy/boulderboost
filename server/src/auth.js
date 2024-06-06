@@ -56,7 +56,7 @@ router.get('/google/callback', passport.authenticate('google', {
   failureRedirect: '/',
   session: true // Ensure session support is enabled
 }), (req, res) => {
-  res.redirect('/profile');
+  res.redirect('http://localhost:5173/');
 });
 
 module.exports = router;

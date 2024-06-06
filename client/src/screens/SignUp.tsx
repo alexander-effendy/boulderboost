@@ -133,20 +133,20 @@ export default function HeroFormSignUpForm() {
                       <div className="mt-5">
                         {/* Grid */}
                         <div className="grid grid-cols-2 gap-4">
-                          <Input className="rounded-[7px] border-slate-700 border-[0.9px]" placeholder="First name" />
-                          <Input className="rounded-[7px] border-slate-700 border-[0.9px]" placeholder="Last name" />
-                          <Input className="rounded-[7px] border-slate-700 border-[0.9px]" placeholder="Email" />
-                          <Input className="rounded-[7px] border-slate-700 border-[0.9px]" placeholder="Company name" />
+                          <Input className="placeholder:text-slate-400 rounded-[7px] border-slate-700 border-[0.9px]" placeholder="First name" />
+                          <Input className="placeholder:text-slate-400 rounded-[7px] border-slate-700 border-[0.9px]" placeholder="Last name" />
+                          <Input className="placeholder:text-slate-400 rounded-[7px] border-slate-700 border-[0.9px]" placeholder="Email" />
+                          <Input className="placeholder:text-slate-400 rounded-[7px] border-slate-700 border-[0.9px]" placeholder="Company name" />
                           <Input
-                            className="col-span-2 rounded-[7px] border-slate-700 border-[0.9px]"
+                            className="placeholder:text-slate-400 col-span-2 rounded-[7px] border-slate-700 border-[0.9px]"
                             placeholder="New password"
                           />
                           <Input
-                            className="col-span-2 rounded-[7px] border-slate-700 border-[0.9px]"
+                            className="placeholder:text-slate-400 col-span-2 rounded-[7px] border-slate-700 border-[0.9px]"
                             placeholder="Current password"
                           />
                           <div className="flex items-center space-x-2 mt-3 col-span-2">
-                            <Checkbox className="rounded-[5px] bg-white text-black" id="terms" />
+                            <Checkbox className="rounded-[5px] bg-black text-black" id="terms" />
                             <Label htmlFor="terms">
                               Accept terms and conditions
                             </Label>

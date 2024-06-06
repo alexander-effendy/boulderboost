@@ -1,10 +1,7 @@
-import { useNavigate } from 'react-router-dom';
-import { Button } from "@/components/ui/button";
 import RockClimbing from '@/assets/RockClimbing.jpg';
 import Navbar from '@/component/Navbar';
 
 const Dashboard = () => {
-  const navigate = useNavigate();
 
   return (
     <div className='w-full h-full flex flex-col items-center overflow-x-hidden'>
@@ -15,9 +12,10 @@ const Dashboard = () => {
         <div className="absolute inset-0 bg-cover bg-center mt-[80px]"
           style={{
             backgroundImage: `url(${RockClimbing})`,
-            opacity: 0.7
+            // opacity: 0.7
           }}
         />
+        
       </section>
 
       <section className="w-screen h-screen">

@@ -1,22 +1,28 @@
 import { useNavigate } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-
+import RockClimbing from '@/assets/RockClimbing.jpg';
+import Navbar from '@/component/Navbar';
 
 const Dashboard = () => {
   const navigate = useNavigate();
 
   return (
-    <div className='w-screen h-screen flex flex-col items-center justify-center gap-[10px]'>
-      <div className="text-2xl">Hello this is dashboard!</div>
-      <Button 
-        className="hover:border-black hover:border-[1px] hover:text-black rounded-[10px] bg-black text-white w-[200px]" 
-        onClick={() => navigate('/signup')}>
-        Sign Up
-      </Button>
+    <div className='w-full h-full flex flex-col items-center overflow-x-hidden'>
+      <Navbar />
 
-        <Button onClick={() => {
-          window.location.href = 'http://localhost:3000/auth/google';
-        }}>Go to youtube</Button>
+      {/* main */}
+      <section className="w-full h-screen bg-black mt-[-80px] relative">
+        <div className="absolute inset-0 bg-cover bg-center mt-[80px]"
+          style={{
+            backgroundImage: `url(${RockClimbing})`,
+            opacity: 0.7
+          }}
+        />
+      </section>
+
+      <section className="w-screen h-screen">
+            s
+      </section>
     </div>
   )
 }
